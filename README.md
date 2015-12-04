@@ -1,16 +1,14 @@
 # social_frases
 Web Crawler implementing step by step the final journey
 
-Dev: @Py3in - Wal Copyright (C) não tenho não. rsrs 
+Wal Copyright (C) não tenho não. rsrs 
 
-Twitter: 
-========
+Twitter: @Py3in
+===============
 
- Créditos..:  @andrewsmedina, @eliasdorneles, @LucasMagn, @luzfcb e @hltbra 
+Créditos..:  @andrewsmedina, @eliasdorneles, @LucasMagn, @luzfcb e @hltbra 
  
- ..........:  por fornecer dicas e códigos para realizar esta tarefa.  
- 
- ..........:  E todas as pessoas que contribuiram com alguma dica. 
+Por fornecer dicas e códigos para realizar esta tarefa. E todas as pessoas que contribuiram ou que irão contribuir com alguma dica ou código. 
 
 **Implementa um Webcrawler extraindo dados de frases step by step
 
@@ -33,37 +31,39 @@ You should have received a copy of the GNU General Public License
 along with this program; if not, write to the Free Software
 Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 
-==============================================================================
 
-dependencias:
+Dependências:
 =============
 
 do sistema:
+
 sudo apt-get install libxml2-dev libxslt-dev python-dev
 
 python2:
 ========
 
-wget -H https://bootstrap.pypa.io/get-pip.py -O /tmp/get-pip.py; sudo -H python2 /tmp/get-pip.py virtualenv virtualenvwrapper -U;
-sudo -H pip2 install splinter lxml
+wget -H https://bootstrap.pypa.io/get-pip.py -O /tmp/get-pip.py; sudo -H python2 /tmp/get-pip.py virtualenv virtualenvwrapper -U; sudo -H pip2 install splinter lxml
 
 python3:
 ========
 
-wget -H https://bootstrap.pypa.io/get-pip.py -O /tmp/get-pip.py; sudo -H python3 /tmp/get-pip.py virtualenv virtualenvwrapper -U;
-sudo -H pip3 install splinter lxml
+wget -H https://bootstrap.pypa.io/get-pip.py -O /tmp/get-pip.py; sudo -H python3 /tmp/get-pip.py virtualenv virtualenvwrapper -U; sudo -H pip3 install splinter lxml
 
 Análise 
 =======
 
-Cerca de 2279 frases curtas curtas frases.
+Cerca de 2279 frases curtas.
 
 O que pegar:
 
 a) A frase em si.
+-----------------
 b) Nome do Author
+------------------
 c) link para o nome do autor.
+-----------------------------
 d) id_mensagem
+---------------
 
 Salvar em 3 dicionários: arquivos texto
 
