@@ -1,7 +1,6 @@
 # social_frases
 Web Crawler implementing step by step the final journey
 
-"""
 Dev: @Py3in - Wal Copyright (C) não tenho não. rsrs 
 
 Twitter: 
@@ -11,6 +10,7 @@ Créditos..:  @andrewsmedina, @eliasdorneles, @LucasMagn, @luzfcb e @hltbra
 ..........:  E todas as pessoas que contribuiram com alguma dica. 
 
 **Implementa um Webcrawler extraindo dados de frases step by step
+
 Inspirado nos scripts : 
 ============================================================
 1) https://gist.github.com/luzfcb/6258745#file-anp_crawler-py
@@ -32,10 +32,6 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 
 ==============================================================================
 
-"""
-
-"""
-
 dependencias:
 =============
 
@@ -54,9 +50,6 @@ python3:
 wget -H https://bootstrap.pypa.io/get-pip.py -O /tmp/get-pip.py; sudo -H python3 /tmp/get-pip.py virtualenv virtualenvwrapper -U;
 sudo -H pip3 install splinter lxml
 
-"""
-
-"""
 Análise 
 =======
 
@@ -173,6 +166,3 @@ Wishlist
 - Post Message in Blog 
 - Special routines which may vary from portal to portal
  
-
-
-"""
