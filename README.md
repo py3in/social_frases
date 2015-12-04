@@ -6,9 +6,9 @@ Dev: @Py3in - Wal Copyright (C) não tenho não. rsrs
 Twitter: 
 ========
 
-Créditos..:  @andrewsmedina, @eliasdorneles, @LucasMagn, @luzfcb e @hltbra
-..........:  por fornecer dicas e códigos para realizar esta tarefa.  
-..........:  E todas as pessoas que contribuiram com alguma dica. 
+ Créditos..:  @andrewsmedina, @eliasdorneles, @LucasMagn, @luzfcb e @hltbra 
+ ..........:  por fornecer dicas e códigos para realizar esta tarefa.  
+ ..........:  E todas as pessoas que contribuiram com alguma dica. 
 
 **Implementa um Webcrawler extraindo dados de frases step by step
 
