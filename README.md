@@ -19,6 +19,8 @@ Inspirado nos scripts :
 
 - 2) https://f.souza.cc/2011/05/splinter-python-tool-for-acceptance.html 
 
+- 3) https://github.com/eliasdorneles/quotes_crawler
+
 This program is free software; you can redistribute it and/or
 modify it under the terms of the GNU General Public License
 as published by the Free Software Foundation; either version 2
