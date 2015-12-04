@@ -14,9 +14,11 @@ Por fornecer dicas e códigos para realizar esta tarefa. E todas as pessoas que 
 
 Inspirado nos scripts : 
 ============================================================
+
 1) https://gist.github.com/luzfcb/6258745#file-anp_crawler-py
+
 2) https://f.souza.cc/2011/05/splinter-python-tool-for-acceptance.html 
-============================================================ 
+
 This program is free software; you can redistribute it and/or
 modify it under the terms of the GNU General Public License
 as published by the Free Software Foundation; either version 2
@@ -57,13 +59,12 @@ Cerca de 2279 frases curtas.
 O que pegar:
 
 a) A frase em si.
------------------
+
 b) Nome do Author
-------------------
+
 c) link para o nome do autor.
------------------------------
+
 d) id_mensagem
----------------
 
 Salvar em 3 dicionários: arquivos texto
 
@@ -85,15 +86,22 @@ Vamos aos passos. Wishlist
 
 Etapa 1) On-Line   
 =================
+
 1.1) Acessar a url inicial. 
+
 1.2) Baixar arquivo bruto de html.
+
 1.3) Salvar arquivo bruto de html da url principal.
     
 Etapa 2) On-Line 
 =================
+
 2.1) Acessar a próxima página 
+
 2.1) Baixar arquivo bruto html da página. 
+
 2.2) Salvar arquivo bruto html desta página. 
+
 2.3) Clicar na próxima página e loop testes...
      Em ambiente de teste estou limitando ao máximo de 10 páginas. 
  
@@ -108,41 +116,59 @@ Etapa 3) Off-Line
          para nós. 
  
 3.1) Abrir arquivo bruto
+
 3.2) Gerar dicionários de autor, mensagens e tudo com ids. 
+
 3.3) Salvar dicionários em disco. 
+
 3.4) Wishlist - add categories in the dictionary. 
 
 Etapa 4) OFF-Line 
 ==================
+
 4.1) Gerar arquivo de Schedule para enviar mensagens. Com random time.  
+
 4.2) Salvar arquivo de Schedule. 2 formatos: Twitter e Facebook.  
 
 Etapa 5) Login On-Line
 ======================
+
 5.1) Facebook (api) 
+
 5.2) Twitter  (api) 
 
 Etapa 6) Ativar Schedule On-Line  (Dependence step 5 ok )
 ========================================================= 
+
 6.1) Enviar mensagem / post twitter / logout or no 
+
 6.2) Enviar mensagem / post facebook / logout or no 
+
 6.3) Salvar mensagem enviada para db.sent.msg.face.txt 
+
 6.4) Salvar mensagem enviada para db.sent.msg.face.txt 
 
 Etapa 7) Rever mensagens. 
 =========================
+
 7.1) Executar etapa 1 com parâmetro especial de segunda coleta.
+
 7.2) Executar etapa 2 com parâmetro especial de segunda coleta. 
+
 7.3) Salvar arquivos para comparação. 
 
 Etapa 8) Prepara novo dicionário. Adicão de parâmetro. OFF-Line
 =============================================================== 
+
 8.1) Executa etapa 3 integralmente. 
 
 Etapa 9) Conferindo o que tem de novo. OFF-Line 
 ================================================
+
 9.1) Compara dicionário novo x antigo
+
 9.2) Separa o que não exite no antio. 
+
 9.3) Merge no dicionário antigo. 
 
 Etapa 10) Procedimento padrão 5 e 6 em schedule loop. End 
