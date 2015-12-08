@@ -1,8 +1,17 @@
 #!/usr/bin/python
 # -*- coding: UTF-8 -*-
-from __future__ import unicode_literals 
+from __future__ import unicode_literals # Tenho dúvidas se necessário.
 #
- 
+#title           : frases_curtas.py 
+#description     : This script will make scraping the web 
+#                : for use in social networks
+#author          : @Py3in 
+#date start      : 20151113
+#last update     : by github
+#version         : 0.2 alfa     
+#usage           : python frases_curtas.py --help 
+#notes           : Install python 2.7+ for to use this script.
+#python_version  : 2.7.6 - (default, Jun 22 2015, 17:58:13) 
 import re
 import random
 from time import sleep
@@ -50,9 +59,29 @@ def random_click():
     end_sleep = "Return of sleep " 
     return end_sleep
 
+def save_next_page_clicked(last_visit,browser.html):
+    file_grv = prefix_file_tmp+zero_left(last_visit)+".html"
+    file_tmp = browser.html.encode('utf8')
+    f = open(file_grv, 'wb')
+    f.write(file_tmp) 
+    f.close()
+    
 
 with Browser() as browser:
     browser.visit(url_start)
+    snpc = save_next_page_clicked(last_visit,browser.html)
+
+    # Aqui vai entrar o while. 
+    # Ainda estudando como dividir as etapas abaixo em funções. 
+
+    last_visit = last_visit + 1  
+    print last_visit 
+    print " vou dormir " 
+    next_click = random_click()
+    print str(next_click)
+
+    link_found = browser.find_link_by_partial_text('Próxima')
+    link_found.first.click()
     file_grv = prefix_file_tmp+zero_left(last_visit)+".html"
     file_tmp = browser.html.encode('utf8')
     f = open(file_grv, 'wb')
@@ -61,9 +90,13 @@ with Browser() as browser:
     last_visit = last_visit + 1  
     print last_visit 
     print " vou dormir " 
-
-##############################################################
-    
-if __name__ == "__main__":
-    import pprint
-    
+    next_click = random_click()
+    print str(next_click)
+    link_found = browser.find_link_by_partial_text('Próxima')
+    link_found.first.click()
+    file_grv = prefix_file_tmp+str(last_visit)+".html"
+    file_tmp = browser.html.encode('utf8')
+    f = open(file_grv, 'wb')
+    f.write(file_tmp) 
+    f.close()
+    last_visit = last_visit + 1  
